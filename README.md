@@ -31,7 +31,7 @@ The following example shows the container used for a deployment step which shows
                     dotnet --version
 ```
 
-#Included Software
+### Included Software
 - .Net SDK
 
 ### Tags
