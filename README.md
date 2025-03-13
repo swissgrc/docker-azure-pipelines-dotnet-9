@@ -31,17 +31,18 @@ The following example shows the container used for a deployment step which shows
                     dotnet --version
 ```
 
-### Tags
+## Included Software
+- [swissgrc/azure-pipelines-git](https://github.com/swissgrc/docker-azure-pipelines-git) as base image
+- .NET 9 SDK
 
-| Tag        | Description                                                                                     | Base Image                         | .NET SDK | Size                                                                                                                              |
-|------------|-------------------------------------------------------------------------------------------------|------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------|
-| latest     | Latest stable release (from `main` branch)                                                      | swissgrc/azure-piplines-git:2.48.1 | 9.0.200  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/latest?style=flat-square)     |
-| 9          | Identical to `latest` tag                                                                       |                                    |          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/9?style=flat-square)          |
-| unstable   | Latest unstable release (from `develop` branch)                                                 | swissgrc/azure-piplines-git:2.48.1 | 9.0.200  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/unstable?style=flat-square)   |
-| 9-unstable | Identical to `unstable` tag                                                                     |                                    |          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/9-unstable?style=flat-square) |
-| 9.0.100    | [.NET SDK 9.0.100](https://github.com/dotnet/core/blob/main/release-notes/9.0/9.0.0/9.0.0.md)   | swissgrc/azure-piplines-git:2.47.0 | 9.0.100  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/9.0.100?style=flat-square)    |
-| 9.0.101    | [.NET SDK 9.0.101](https://github.com/dotnet/core/blob/main/release-notes/9.0/9.0.0/9.0.101.md) | swissgrc/azure-piplines-git:2.47.1 | 9.0.101  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/9.0.101?style=flat-square)    |
-| 9.0.102    | [.NET SDK 9.0.102](https://github.com/dotnet/core/blob/main/release-notes/9.0/9.0.1/9.0.1.md)   | swissgrc/azure-piplines-git:2.48.1 | 9.0.102  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/9.0.102?style=flat-square)    |
-| 9.0.200    | [.NET SDK 9.0.200](https://github.com/dotnet/core/blob/main/release-notes/9.0/9.0.2/9.0.2.md)   | swissgrc/azure-piplines-git:2.48.1 | 9.0.200  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/9.0.200?style=flat-square)    |
+## Tags
+
+| Tag        | Description                                        | Size                                                                                                                              |
+|------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| latest     | Latest stable release (from `main` branch)         | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/latest?style=flat-square)     |
+| 9          | Identical to `latest` tag                          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/9?style=flat-square)          |
+| unstable   | Latest unstable release (from `develop` branch)    | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/unstable?style=flat-square)   |
+| 9-unstable | Identical to `unstable` tag                        | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-dotnet/9-unstable?style=flat-square) |
+| x.y.z      | Image for a specific version of .NET SDK           |                                                                                                                                   |
 
 [Azure Pipelines container jobs]: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/container-phases
