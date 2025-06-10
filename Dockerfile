@@ -46,7 +46,7 @@ RUN apt-get update -y && \
 # Install .NET 9
 
 # renovate: datasource=github-tags depName=dotnet/sdk extractVersion=^v(?<version>.*)$
-ENV DOTNET_VERSION=9.0.300
+ENV DOTNET_VERSION=9.0.301
 
 ENV \
     # Do not show first run text
